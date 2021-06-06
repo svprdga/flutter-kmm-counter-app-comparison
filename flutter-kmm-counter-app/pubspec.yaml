@@ -1,0 +1,19 @@
+name: flutter_kmm_counter_app
+description: Comparison of the same basic app made with Flutter and with Kotlin Multiplatform Mobile (KMM)
+author: David Serrano Canales <svprdga>
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
