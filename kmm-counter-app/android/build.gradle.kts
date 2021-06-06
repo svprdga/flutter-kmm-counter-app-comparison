@@ -6,6 +6,8 @@ plugins {
 dependencies {
     implementation(project(":shared"))
 
+    implementation("com.google.android.material:material:1.3.0")
+
     // Compose
     implementation("androidx.compose.ui:ui:1.0.0-beta08")
     implementation("androidx.compose.ui:ui-tooling:1.0.0-beta08")
