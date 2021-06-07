@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -34,9 +35,13 @@ private fun CounterView(model: CounterModel, viewModel: CounterViewModel) {
         Box(
             Modifier.fillMaxSize()
         ) {
-            Column {
+            Column(modifier = Modifier.align(Alignment.Center)) {
                 Text("You have pushed the button this many times:")
-                Text("${model.count}")
+                Text(
+                    "${model.count}",
+                    style = MaterialTheme.typography.h4,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
+                )
             }
             FloatingActionButton(
                 modifier = Modifier
